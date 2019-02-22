@@ -1,0 +1,19 @@
+{
+  "name": "rne-dev-698",
+  "description": "A blueprint for React Native apps using Expo. This django application was built with Crowdbotics www.crowdbotics.com",
+  "repository": "https://github.com/crowdbotics-users/rne-dev-698",
+  "keywords": [
+    "mobile_app",
+    "react_native_expo"
+  ],
+  "env": {
+    "DEBUG_COLLECTSTATIC": "1"
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "sendgrid:starter"
+  ],
+  "scripts": {
+    "postdeploy": "./backend/postdeploy.sh"
+  }
+}
